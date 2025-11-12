@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>แนะนำตัว | ธีมภูเขา</title>
+  <style>
+    /* พื้นหลังแบบภูเขา */
+    body {
+      margin: 0;
+      font-family: "Prompt", sans-serif;
+      background: linear-gradient(to top, #2c3e50, #4ca1af);
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1350&q=80')
+        no-repeat center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    h2 {
+      font-weight: 300;
+      margin: 10px 0 20px;
+    }
+
+    section {
+      padding: 50px 20px;
+      background-color: rgba(255,255,255,0.1);
+      backdrop-filter: blur(5px);
+      border-radius: 15px;
+      width: 80%;
+      max-width: 800px;
+      margin: 40px auto;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #4ca1af;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #76c7c0;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      background: rgba(0,0,0,0.3);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>สวัสดีครับ ผมชื่อ ดนุเดช นายกุม</h1>
+    <h2>นักพัฒนาเว็บไซต์ | คนรักธรรมชาติ | ผู้หลงใหลภูเขา</h2>
+    <a href="#about" class="btn">รู้จักผมมากขึ้น</a>
+  </header>
+
+  <section id="about">
+    <h2>เกี่ยวกับผม</h2>
+    <p>
+      ผมเป็นคนที่ชอบการเรียนรู้สิ่งใหม่ ๆ โดยเฉพาะเทคโนโลยีและธรรมชาติ
+      ภูเขาเป็นแรงบันดาลใจให้ผมคิดสร้างสรรค์และพัฒนาเว็บไซต์ที่สงบ เรียบง่าย และมีความหมาย
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>ติดต่อผม</h2>
+    <p>อีเมล: <a href="mailto:yourname@email.com" style="color:#fff;">yourname@email.com</a></p>
+    <p>Facebook: <a href="#" style="color:#fff;">facebook.com/yourname</a></p>
+  </section>
+
+  <footer>
+    © 2025 [ชื่อของคุณ] | ธีมภูเขาโดยแรงบันดาลใจจากธรรมชาติ 🏔️
+  </footer>
+</body>
+</html>
