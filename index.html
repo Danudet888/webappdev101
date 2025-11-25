@@ -1,98 +1,183 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>แนะนำตัว | ธีมภูเขา</title>
-  <style>
-    /* พื้นหลังแบบภูเขา */
-    body {
-      margin: 0;
-      font-family: "Prompt", sans-serif;
-      background: linear-gradient(to top, #2c3e50, #4ca1af);
-      color: white;
-      text-align: center;
-      overflow-x: hidden;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danudet Portfolio</title>
+    
+    <style>
 
-    header {
-      background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1350&q=80')
-        no-repeat center/cover;
-      height: 80vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      color: white;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
-    }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
 
-    h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
 
-    h2 {
-      font-weight: 300;
-      margin: 10px 0 20px;
-    }
+        h1, h2, h3 {
+            color: #ffb74d;
+            font-weight: 600;
+        }
 
-    section {
-      padding: 50px 20px;
-      background-color: rgba(255,255,255,0.1);
-      backdrop-filter: blur(5px);
-      border-radius: 15px;
-      width: 80%;
-      max-width: 800px;
-      margin: 40px auto;
-    }
+        header {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #333;
+        }
+        
+        .name {
+            font-size: 2.5em;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
 
-    .btn {
-      display: inline-block;
-      background-color: #4ca1af;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 25px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
+        .title {
+            font-size: 1.5em;
+            color: #ffb74d;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
 
-    .btn:hover {
-      background-color: #76c7c0;
-      transform: scale(1.05);
-    }
+        .intro-text {
+            color: #cccccc;
+            font-size: 1.05em;
+        }
 
-    footer {
-      margin-top: 50px;
-      padding: 20px;
-      background: rgba(0,0,0,0.3);
-      font-size: 0.9rem;
-    }
-  </style>
+        .skills-section {
+            margin-bottom: 40px;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            background-color: #333333;
+            display: inline-block;
+            padding: 8px 15px;
+            margin: 5px 5px 5px 0;
+            border-radius: 5px;
+            font-size: 0.9em;
+            color: #ffffff;
+        }
+
+        .project-card {
+            background-color: #2a2a2a;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .project-card:hover {
+            background-color: #3a3a3a;
+        }
+
+        .project-title {
+            font-size: 1.3em;
+            color: #ffb74d;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .project-desc {
+            font-size: 0.9em;
+            color: #bbbbbb;
+            margin-bottom: 0;
+        }
+
+        .project-tag {
+            font-size: 0.8em;
+            color: #888888;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.8em;
+            color: #777777;
+            border-top: 1px solid #333;
+            margin-top: 40px;
+        }
+
+    </style>
 </head>
 <body>
-  <header>
-    <h1>สวัสดีครับ ผมชื่อ ดนุเดช นายกุม</h1>
-    <h2>นักพัฒนาเว็บไซต์ | คนรักธรรมชาติ | ผู้หลงใหลภูเขา</h2>
-    <a href="#about" class="btn">รู้จักผมมากขึ้น</a>
-  </header>
+    <div class="container">
 
-  <section id="about">
-    <h2>เกี่ยวกับผม</h2>
-    <p>
-      ผมเป็นคนที่ชอบการเรียนรู้สิ่งใหม่ ๆ โดยเฉพาะเทคโนโลยีและธรรมชาติ
-      ภูเขาเป็นแรงบันดาลใจให้ผมคิดสร้างสรรค์และพัฒนาเว็บไซต์ที่สงบ เรียบง่าย และมีความหมาย
-    </p>
-  </section>
+        <header>
+            <h1 class="name">Danudet Naikum</h1>
+            <h2 class="title">Developer</h2>
+            <p class="intro-text">
+                ผู้เชี่ยวชาญด้านการพัฒนาระบบ Web Application ที่มีประสิทธิภาพสูง และสามารถขยายตัวได้ (Scalable) 
+        โดยเน้นการสร้าง API ที่แข็งแกร่งและการพัฒนาส่วนหน้าด้วยเทคโนโลยีสมัยใหม่
+            </p>
+        </header>
 
-  <section id="contact">
-    <h2>ติดต่อผม</h2>
-    <p>อีเมล: <a href="mailto:yourname@email.com" style="color:#fff;">yourname@email.com</a></p>
-    <p>Facebook: <a href="#" style="color:#fff;">facebook.com/yourname</a></p>
-  </section>
+        <section class="skills-section">
+            <h3> Skills & Tools</h3>
+            <ul class="skills-list">
+                <li>JavaScript (ES6+)</li>
+                <li>React / Redux</li>
+                <li>Node.js / Express</li>
+                <li>MongoDB / PostgreSQL</li>
+                <li>Docker / AWS S3</li>
+                <li>Git / GitHub</li>
+                <li>RESTful API</li>
+            </ul>
+        </section>
 
-  <footer>
-    © 2025 [ชื่อของคุณ] | ธีมภูเขาโดยแรงบันดาลใจจากธรรมชาติ 🏔️
-  </footer>
+        <section class="projects-section">
+            <h3> Selected Projects</h3>
+            
+            <a class="project-card">
+                <h4 class="project-title">Scalable E-commerce API</h4>
+                <span class="project-tag">Backend Development | Node.js, Express, MongoDB</span>
+                <p class="project-desc">
+                พัฒนาระบบ Backend ครบวงจรสำหรับ E-commerce รองรับการยืนยันตัวตน (Authentication) 
+            การจัดการสินค้าคงคลัง และการประมวลผลคำสั่งซื้อ
+                </p>
+            </a>
+            
+            <a class="project-card">
+                <h4 class="project-title">Real-Time Analytics Dashboard</h4>
+                <span class="project-tag">Front-End | React, Chart.js, REST API Integration</span>
+                <p class="project-desc">
+                สร้าง Dashboard สำหรับแสดงข้อมูลแบบเรียลไทม์ ใช้ React และ Chart.js ในการสร้าง Data Visualization 
+            ที่รวดเร็วและตอบสนองได้ดี (Responsive)
+                </p>
+            </a>
+
+            <a class="project-card">
+                <h4 class="project-title">Microservice for File Management</h4>
+                <span class="project-tag">DevOps & Cloud | Python, Docker, AWS S3</span>
+                <p class="project-desc">
+                ออกแบบและ Deploy Microservice ด้วย Docker เพื่อจัดการการอัปโหลดและจัดเก็บไฟล์บน AWS S3 
+            พร้อมระบบ CI/CD พื้นฐาน
+                </p>
+            </a>
+            
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Danudet Naikum — Developer. Simple Portfolio Template.</p>
+        </footer>
+
+    </div>
 </body>
 </html>
